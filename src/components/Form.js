@@ -8,7 +8,7 @@ class Form extends React.Component {
 
   handleFirstNameChange = event => {
     this.setState({
-      firstName: event.target.value
+      firstName: event.target.value, 
     })
   }
 
