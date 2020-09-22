@@ -1,5 +1,6 @@
 # React Controlled Components
 
+
 ## Overview
 
 In this lesson, we'll discuss how to set up a controlled form in React.
@@ -152,7 +153,7 @@ turn, causes a re-render... and the cycle completes. The _new_ state values we
 just set are used to set the `value` attributes of our two `input`s. From a
 user's perspective, the form behaves exactly how we'd expect, displaying the
 text that is typed. From React's perspective, we gain control over form values,
-giving us the ability to more easily manipulate (or restrict) what our `inputs`s 
+giving us the ability to more easily manipulate (or restrict) what our `inputs`s
 display, and send form data to other parts of the app or out onto the internet...
 
 <img src="https://curriculum-content.s3.amazonaws.com/react/react-forms/Image_21_FlowchartUpdate.png" width="300" alt="Diagram of onChange events" />
@@ -377,7 +378,7 @@ sends all _20_ state values wherever we need them to go upon submission.
 ## Why Use Controlled Forms When We Do Not Have To
 
 Controlled forms can very useful for specific purposes - since we can set our
-state _elsewhere_ using this setup, its easy to populate forms from existing 
+state _elsewhere_ using this setup, its easy to populate forms from existing
 available data.
 
 When we have a controlled form, the state does not need to be stored in the same
@@ -396,7 +397,7 @@ class ParentComponent extends React.Component {
     firstName: "",
     lastName: "",
   }
-  
+
   handleFirstNameChange = event => {
     this.setState({
       firstName: event.target.value
@@ -453,7 +454,7 @@ class Form extends React.Component {
 export default Form;
 ```
 
-Previously, our application was rendering `Form` directly inside `src/index.js`. Now, 
+Previously, our application was rendering `Form` directly inside `src/index.js`. Now,
 however, we've added a component that _renders_ `Form` as a child. Because of this
 change, you'll need to update `src/index.js` so that it renders `ParentComponent` instead of
 `Form`.
@@ -620,7 +621,7 @@ class ParentComponent extends React.Component {
     firstName: "",
     lastName: "",
   }
-  
+
   handleChange = event => {
     this.setState({
       [event.target.name]: event.target.value
