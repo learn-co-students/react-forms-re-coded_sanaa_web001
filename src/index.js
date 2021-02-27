@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form from './components/Form'
-
+import OverAll from './components/OverAll'
 ReactDOM.render(
   <div>
-    <Form />
+    <OverAll />
   </div>,
   document.getElementById('root')
 );
